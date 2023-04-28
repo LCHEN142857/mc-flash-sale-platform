@@ -3,7 +3,7 @@
  * All rights reserved
  * Created on 2023-04-28
  */
-package org.mc.fsp.config;
+package org.mc.fsp.enums;
 
 /**
  * description
@@ -11,5 +11,6 @@ package org.mc.fsp.config;
  * @author LCHEN
  * @date 2023-04-28
  */
-public class CacheConfig {
+public interface InterfaceCode {
+
 }
