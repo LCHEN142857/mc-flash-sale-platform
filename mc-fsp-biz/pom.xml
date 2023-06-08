@@ -1,0 +1,18 @@
+<project>
+    <parent>
+        <artifactId>mc-flash-sale-platform</artifactId>
+        <groupId>org.mc.fsp</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>org.mc.fsp.biz</groupId>
+    <artifactId>mc-fsp-biz</artifactId>
+    <packaging>pom</packaging>
+    <name>mc-fsp-biz</name>
+    <modules>
+        <module>mc-fsp-biz-common</module>
+        <module>mc-fsp-biz-product</module>
+        <module>mc-fsp-biz-account</module>
+        <module>mc-fsp-biz-order</module>
+    </modules>
+</project>
