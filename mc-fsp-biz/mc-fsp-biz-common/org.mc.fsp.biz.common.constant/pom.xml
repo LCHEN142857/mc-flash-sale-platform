@@ -8,6 +8,6 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.mc.fsp.biz.common.constant</groupId>
     <artifactId>org.mc.fsp.biz.common.constant</artifactId>
-    <name>Archetype - org.mc.fsp.biz.common.constant</name>
-    <url>http://maven.apache.org</url>
+    <name>org.mc.fsp.biz.common.constant</name>
+
 </project>

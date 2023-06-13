@@ -8,6 +8,6 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.mc.fsp.common.util</groupId>
     <artifactId>org.mc.fsp.common.util</artifactId>
-    <name>Archetype - org.mc.fsp.common.util</name>
-    <url>http://maven.apache.org</url>
+    <name>org.mc.fsp.common.util</name>
+
 </project>
