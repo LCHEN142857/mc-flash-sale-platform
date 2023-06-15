@@ -2,16 +2,15 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
     <parent>
         <artifactId>mc-fsp-biz</artifactId>
-        <groupId>org.mc.fsp.biz</groupId>
+        <groupId>org.mc.fsp</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.mc.fsp.biz.common</groupId>
     <artifactId>mc-fsp-biz-common</artifactId>
     <packaging>pom</packaging>
     <name>mc-fsp-biz-common</name>
     <modules>
-        <module>org.mc.fsp.biz.common.constant</module>
-        <module>org.mc.fsp.biz.common.util</module>
+        <module>mc-fsp-biz-common-constant</module>
+        <module>mc-fsp-biz-common-util</module>
     </modules>
 </project>

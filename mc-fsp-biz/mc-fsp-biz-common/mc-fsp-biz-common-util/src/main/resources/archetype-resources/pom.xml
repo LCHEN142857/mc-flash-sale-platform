@@ -2,7 +2,7 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.mc.fsp</groupId>
-  <artifactId>mc-fsp-biz-order</artifactId>
+  <artifactId>org.mc.fsp.biz.common.util</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <dependencies>
     <dependency>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.mc.fsp.common.db.dao.mapper.ProductPrimaryMapper">
+
+    <select id="getAllProducts" resultType="org.mc.fsp.common.db.po.ProductPrimaryPo">
+        SELECT product_id, product_name, status, create_time, update_time, update_manager
+        FROM product_primary;
+    </select>
+
+    <!-- 插入操作 -->
+    <insert id="insertProduct" parameterType="org.mc.fsp.common.db.po.ProductPrimaryPo">
+        INSERT INTO product_primary (product_id, product_name, status, create_time, update_time, update_manager)
+        VALUES (#{product_id}, #{product_name}, #{status}, #{create_time}, #{update_time}, #{update_manager})
+    </insert>
+
+    <!-- 删除操作 -->
+    <delete id="deleteProductById" parameterType="java.lang.String">
+        DELETE FROM product_primary WHERE product_id = #{product_id}
+    </delete>
+
+    <!-- 更新操作 -->
+    <update id="updateProduct" parameterType="org.mc.fsp.common.db.po.ProductPrimaryPo">
+        UPDATE product_primary
+        SET product_name = #{product_name}, status = #{status}, create_time = #{create_time},
+        update_time = #{update_time}, update_manager = #{update_manager}
+        WHERE product_id = #{product_id}
+    </update>
+
+    <!-- 查询操作 -->
+    <select id="getProductById" resultType="org.mc.fsp.common.db.po.ProductPrimaryPo">
+        SELECT product_id, product_name, status, create_time, update_time, update_manager
+        FROM product_primary
+        WHERE product_id = #{product_id}
+    </select>
+
+
+</mapper>

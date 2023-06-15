@@ -6,13 +6,12 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <modelVersion>4.0.0</modelVersion>
-    <groupId>org.mc.fsp.manage</groupId>
     <artifactId>mc-fsp-manage</artifactId>
     <packaging>pom</packaging>
     <name>mc-fsp-manage</name>
     <modules>
-        <module>org.mc.fsp.manage.account</module>
-        <module>org.mc.fsp.manage.product</module>
+        <module>mc-fsp-manage-account</module>
+        <module>mc-fsp-manage-product</module>
     </modules>
 
 </project>
