@@ -2,8 +2,8 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="org.mc.fsp.common.db.dao.mapper.ProductPrimaryMapper">
 
-    <select id="getAllProducts" resultType="org.mc.fsp.common.db.po.ProductPrimaryPo">
-        SELECT product_id, product_name, status, create_time, update_time, update_manager
+    <select id="getAllProducts" resultType="org.mc.fsp.common.bean.vo.ProductPrimaryVo">
+        SELECT product_id, product_name, status
         FROM product_primary;
     </select>
 
@@ -27,8 +27,8 @@
     </update>
 
     <!-- 查询操作 -->
-    <select id="getProductById" resultType="org.mc.fsp.common.db.po.ProductPrimaryPo">
-        SELECT product_id, product_name, status, create_time, update_time, update_manager
+    <select id="getProductById" resultType="org.mc.fsp.common.bean.vo.ProductPrimaryVo">
+        SELECT product_id, product_name, status
         FROM product_primary
         WHERE product_id = #{product_id}
     </select>

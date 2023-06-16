@@ -5,7 +5,7 @@
  */
 package org.mc.fsp.manage.product.controller;
 
-import org.mc.fsp.common.db.po.ProductPrimaryPo;
+import org.mc.fsp.common.bean.vo.ProductPrimaryVo;
 import org.mc.fsp.manage.product.service.impl.ProductPrimaryServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -28,7 +28,7 @@ public class ProductController {
     ProductPrimaryServiceImpl productPrimaryService;
 
     @GetMapping("/all")
-    public List<ProductPrimaryPo> get() {
+    public List<ProductPrimaryVo> get() {
         return productPrimaryService.get();
     }
 

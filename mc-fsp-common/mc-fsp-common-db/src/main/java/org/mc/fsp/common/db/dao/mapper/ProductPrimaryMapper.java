@@ -6,6 +6,7 @@
 package org.mc.fsp.common.db.dao.mapper;
 
 import org.apache.ibatis.annotations.Mapper;
+import org.mc.fsp.common.bean.vo.ProductPrimaryVo;
 import org.mc.fsp.common.db.po.ProductPrimaryPo;
 
 import java.util.List;
@@ -19,12 +20,12 @@ import java.util.List;
 @Mapper
 public interface ProductPrimaryMapper {
 //    @Select("SELECT product_id, product_name, status, create_time, update_time, update_manager FROM product_primary;")
-    List<ProductPrimaryPo> getAllProducts();
+    List<ProductPrimaryVo> getAllProducts();
 
     void insertProduct(ProductPrimaryPo product);
     void deleteProductById(String productId);
     void updateProduct(ProductPrimaryPo product);
-    ProductPrimaryPo getProductById(String productId);
+    ProductPrimaryVo getProductById(String productId);
 
 
 }

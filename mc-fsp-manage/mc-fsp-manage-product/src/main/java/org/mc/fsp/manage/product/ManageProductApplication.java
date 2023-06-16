@@ -18,7 +18,6 @@ import org.springframework.context.annotation.PropertySource;
  */
 @ComponentScan(value = "org.mc.fsp")
 @SpringBootApplication
-//@MapperScan("org.mc.fsp.common.db")
 // load the 'common-db' module properties file
 @PropertySource("classpath:application-database-${spring.profiles.active}.properties")
 public class ManageProductApplication {
