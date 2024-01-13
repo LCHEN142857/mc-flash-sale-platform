@@ -5,6 +5,7 @@
  */
 package org.mc.fsp.manage.product.controller;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import org.mc.fsp.common.bean.vo.ProductPrimaryVo;
 import org.mc.fsp.manage.product.service.impl.ProductPrimaryServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,13 +23,16 @@ import java.util.List;
  */
 @RequestMapping("/fsp/mng/product")
 @RestController
+@Tag(name = "产品controller", description = "产品接口")
 public class ProductController {
 
     @Autowired
     ProductPrimaryServiceImpl productPrimaryService;
 
     @GetMapping("/all")
-    public List<ProductPrimaryVo> get() {
+    public List<ProductPrimaryVo> get(
+//            @ApiParam(value = "查询请求体", name = "queryBody") ProductQueryRequest pqr
+            ) {
         return productPrimaryService.get();
     }
 
